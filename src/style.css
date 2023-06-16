@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Baloo+2&family=Lexend+Exa:wght@100;200&family=Montserrat+Alternates:wght@100;200&family=Montserrat:wght@200&family=Poppins:ital,wght@0,100;0,400;0,600;1,800&family=Space+Mono&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Baloo 2', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+  overflow-x: hidden;
+}
+h1 {
+  text-align: center;
+  /* margin-top: 1rem; */
+  padding-top: 1rem;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #ff004f;
+  padding-bottom: 0.5rem;
+  color: #ff004f;
+  font-size: 3rem;
+}
+
+h1 span {
+  font-size: 6rem;
+  color: #ff004f;
+}
+h2 {
+  text-align: center;
+  margin-top: 3rem;
+  color: #68575c;
+  font-size: 3rem;
+}
+
+.cards {
+  margin: 2rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin-top: 6rem;
+}
+.box {
+  width: 26rem;
+  height: auto;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border: 1px solid #ff004f;
+}
+.image img {
+  width: 100%;
+  height: 12rem;
+  border-radius: 0.5rem;
+  transition: 0.3s ease;
+  object-fit: cover;
+}
+
+.image img:hover {
+  transform: scale(1.1);
+}
+.name {
+  font-size: 1.7rem;
+  padding-bottom: 0.5rem;
+  color: #ff004f;
+  font-family: 'poppins', sans-serif;
+}
+
+p {
+  font-size: 1.3rem;
+  font-family: unset;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  align-items: center;
+}
+.price {
+  font-size: 1.5rem;
+}
+button {
+  width: auto;
+  padding: 0.2rem 1.3rem;
+  background-color: #ff004f;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 0.3rem;
+  overflow: none;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: transparent;
+  color: black;
+  border-color: #ff004f;
+}
+.price span {
+  color: #ff004f;
+  font-weight: 600;
+}
+.button_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 4rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  flex-wrap: wrap;
+}
+.button_flex button {
+  width: 10rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 680px) {
+  .cards {
+    gap: 3rem;
+  }
+}
+@media (max-width: 640px) {
+  .cards {
+    justify-content: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards {
+    margin: 2rem 2rem;
+  }
+  .box {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 570px) {
+  .button_flex {
+    gap: 3rem;
+  }
+  p {
+    font-size: 1.2rem;
+    font-family: unset;
+    line-height: 15px;
+  }
+  .flex {
+    margin-top: 1.5rem;
+  }
+  button {
+    width: auto;
+    padding: 0.2rem 1rem;
+  }
+  .button_flex {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 509px) {
+  .button_flex {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .box {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .button_flex {
+    gap: 1rem;
+  }
+
+  .box {
+    width: 25rem;
+  }
+}
